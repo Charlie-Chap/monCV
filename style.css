@@ -9,6 +9,7 @@
     font-weight: 300;
     font-size: .9rem;
     line-height: 1.5;
+    margin:16px;
   }
   
   a{
@@ -58,7 +59,7 @@
     grid-template-areas: "left-column right-column right-column";
     width: 1200px;
     margin: 100px auto;
-    box-shadow: 0 1px 3px #0000001f, 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
   }
   
   .section{
@@ -70,15 +71,35 @@
     grid-area: left-column;
     padding: 50px;
     background-color: #525252;
-    color: white;
+    color: #ffffff;
   }
   
+  .profil{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.5;
+    margin:16px;
+    color: #dbd8d8;
+  }
+
+  .langue{
+    font-family: Roboto;
+    font-weight: 350;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1.5;
+    margin:16px;
+    color: #ffffff;
+  }
   .portait{
     border-radius: 50%;
     max-width: 150px;
     margin: auto;
     display: block;
     margin-bottom: 50px;
+    font-style: italic;
   }
   
   .skills{
@@ -124,3 +145,21 @@
   .experience-list{
     list-style-type: circle;
   }
+
+/* Responsive */
+
+/* tous les écrans supérieurs à 960px */
+@media screen and (min-width:1200px){
+  body{
+    margin:16px auto;
+    max-width:1168px; /* 1200 - 16*2 */
+  }
+}
+
+/* valable pour tous les écrans */
+p{
+  line-height:1.5;
+  color:#7d1f1f;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
