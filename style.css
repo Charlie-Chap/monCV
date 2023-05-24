@@ -9,7 +9,6 @@
     font-weight: 300;
     font-size: .9rem;
     line-height: 1.5;
-    margin:16px;
   }
   
   a{
@@ -147,19 +146,8 @@
   }
 
 /* Responsive */
-
-/* tous les écrans supérieurs à 960px */
-@media screen and (min-width:1200px){
-  body{
-    margin:16px auto;
-    max-width:1168px; /* 1200 - 16*2 */
+@media screen and (max-width: 1500px) {
+  .body {
+    width: 90%;
   }
-}
-
-/* tous les écrans */
-p{
-  line-height:1.5;
-  color:#7d1f1f;
-  font-weight: 500;
-  font-size: 1.1rem;
 }
