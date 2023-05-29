@@ -3,7 +3,6 @@ function addDarkmodeWidget() {
 }
 window.addEventListener('load', addDarkmodeWidget);
 
-
 const options = {
   bottom: '64px', // default: '32px'
   right: 'unset', // default: '32px'
@@ -17,6 +16,3 @@ const options = {
   label: '🌓', // default: ''
   autoMatchOsTheme: true // default: true
 }
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
