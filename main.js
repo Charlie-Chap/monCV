@@ -1,3 +1,9 @@
+function addDarkmodeWidget() {
+  new Darkmode().showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
+
+
 const options = {
   bottom: '64px', // default: '32px'
   right: 'unset', // default: '32px'
